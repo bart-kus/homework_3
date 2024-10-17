@@ -1,4 +1,18 @@
-"Implement login feature" 
+#trafic light , micro python
 
-#code below:
+import machine
+import utime
+import _thread
+
+
+led_red = machine.Pin(15, machine.Pin.OUT)
+led_amber = machine.Pin(14, machine.Pin.OUT)
+led_green = machine.Pin(13, machine.Pin.OUT)
+button = machine.Pin(16, machine.Pin.IN, machine.Pin.PULL_DOWN)
+buzzer = machine.Pin(12, machine.Pin.OUT)
+
+global button_pressed
+button_pressed = False
+
+
 
